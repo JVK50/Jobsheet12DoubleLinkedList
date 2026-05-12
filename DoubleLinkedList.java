@@ -71,4 +71,18 @@ public class DoubleLinkedList {
             current = current.next;
         }
     }
+
+    // MODIFIKASI PERTANYAAN NO.6 - method printReverse()
+public void printReverse() {
+    if (isEmpty()) {
+        System.out.println("Linked List masih kosong.");
+        return;
+    }
+    System.out.println("=== Tampil Data Terbalik (Tail -> Head) ===");
+    Node current = tail;
+    while (current != null) {
+        current.data.tampil();
+        current = current.prev;
+    }
+}
 }
